@@ -8,7 +8,7 @@
     <!-- Order Route Screen -->
     <string name="please_grant_permission">Por favor, conceda permiso para acceder a la galería.</string>
     <string name="current_location">Ubicacion actual</string>
-    <string name="next_order">Sigueinte pedido</string>
+    <string name="next_order">Siguiente pedido</string>
     <string name="next_delivery">Próxima entrega</string>
     <string name="location">Ubicacion</string>
 
