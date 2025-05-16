@@ -3,9 +3,8 @@
  * Created by Ulises Gonzalez
  * Copyright (c) 2025. All rights reserved
  */
-package com.myorderroute.mobile.domain
+package com.myorderroute.mobile.domain.mapper
 
-import com.myorderroute.mobile.domain.mapper.toDomain
 import com.myorderroute.mobile.utils.CoordinatesMock.coordinatesModel
 import com.myorderroute.mobile.utils.CoordinatesMock.coordinatesResponse
 import kotlinx.coroutines.test.runTest
