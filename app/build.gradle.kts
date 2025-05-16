@@ -19,7 +19,7 @@ android {
 
     defaultConfig {
         resValue("string", "APP_NAME", "\"${properties["app.name"]}\"")
-        resValue("string", "APP_MAPS", "\"${properties["app.maps"]}\"")
+        resValue("string", "MAPS_KEY", "\"${properties["maps.key"]}\"")
 
         buildConfigField("String", "BASE_URL", "\"http://demo4093551.mockable.io/\"")
         buildConfigField("String", "LOCATIONS_ENDPOINT", "\"locations\"")
