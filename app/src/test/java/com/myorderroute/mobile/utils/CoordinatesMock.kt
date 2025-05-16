@@ -8,6 +8,7 @@ package com.myorderroute.mobile.utils
 import com.myorderroute.mobile.data.network.model.CoordinatesDataResponse
 import com.myorderroute.mobile.data.network.model.CoordinatesResponse
 import com.myorderroute.mobile.domain.model.CoordinatesModel
+import com.myorderroute.mobile.util.network.Resource
 import retrofit2.Response
 
 object CoordinatesMock {
@@ -42,4 +43,6 @@ object CoordinatesMock {
 
     val coordinatesDataResponse: Response<CoordinatesDataResponse> =
         Response.success(CoordinatesDataResponse(coordinatesResponseList))
+
+    val coordinatesModelListResource = Resource.Success(coordinatesModelList)
 }
