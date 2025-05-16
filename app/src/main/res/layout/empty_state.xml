@@ -31,6 +31,7 @@
 
         <TextView
             android:id="@+id/titleTextView"
+            style="@style/textTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/margin.normal"
@@ -39,6 +40,7 @@
 
         <TextView
             android:id="@+id/subtitleTextView"
+            style="@style/textNormal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

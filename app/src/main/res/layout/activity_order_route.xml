@@ -49,15 +49,15 @@
 
                 <TextView
                     android:id="@+id/nextLocationTitleTextView"
+                    style="@style/textNormalBold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin.small"
-                    android:text="@string/next_delivery"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                    android:textStyle="bold" />
+                    android:text="@string/next_delivery" />
 
                 <TextView
                     android:id="@+id/nextLocationNameTextView"
+                    style="@style/textNormal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin.small"
