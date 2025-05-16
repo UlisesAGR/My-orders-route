@@ -24,7 +24,7 @@
             android:layout_height="180dp"
             android:layout_gravity="center"
             android:contentDescription="@string/image"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/il_logo" />
 
         <TextView
             style="@style/textTitle"

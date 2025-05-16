@@ -33,7 +33,7 @@
             android:id="@+id/titleTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/padding.normal"
+            android:layout_marginVertical="@dimen/margin.normal"
             android:gravity="center"
             tools:text="Title" />
 

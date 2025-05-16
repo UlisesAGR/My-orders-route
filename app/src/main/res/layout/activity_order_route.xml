@@ -85,7 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
-        app:imageEmptyState="@drawable/logo"
+        app:imageEmptyState="@drawable/il_logo"
         app:subtitleEmptyState="@string/without_orders"
         app:titleEmptyState="@string/you_don_t_have_orders"
         tools:visibility="gone" />
