@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ - attrs.xml
+ - Created by Ulises Gonzalez
+ - Copyright (c) 2025. All rights reserved
+-->
+<resources>
+
+    <declare-styleable name="Loader">
+        <attr name="textLoader" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyState">
+        <attr name="imageEmptyState" format="reference" />
+        <attr name="titleEmptyState" format="string" />
+        <attr name="subtitleEmptyState" format="string" />
+    </declare-styleable>
+
+</resources>

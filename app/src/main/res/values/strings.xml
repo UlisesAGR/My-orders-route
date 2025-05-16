@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ - strings.xml - english
+ - Created by Ulises Gonzalez on 18/02/25
+ - Copyright (c) 2025. All rights reserved
+-->
+<resources>
+
+    <string name="n_a" translatable="false">N/A</string>
+
+    <!-- Order Route Screen -->
+    <string name="please_grant_permission">Please grant permission to access the gallery</string>
+    <string name="current_location">Current location</string>
+    <string name="next_order">Next Order</string>
+    <string name="next_delivery">Next delivery</string>
+    <string name="location">Location</string>
+
+    <!-- Empty State -->
+    <string name="image">Image</string>
+
+    <!-- Loader -->
+    <string name="loading">Loading...</string>
+    <string name="without_orders">Without orders</string>
+    <string name="you_don_t_have_orders">You don\'t have orders</string>
+    <string name="deliver_and_continue">Deliver and continue</string>
+
+    <!-- Welcome Screen -->
+    <string name="continue_flow">Continue</string>
+    <string name="welcome">Welcome</string>
+    <string name="start_your_route_with_the_best_app">Start your route with the best app</string>
+
+    <!-- Success Screen -->
+    <string name="success">Success</string>
+    <string name="you_finished_your_deliveries">You finished your deliveries</string>
+
+    <!-- Delivery Dialog -->
+    <string name="message">Message</string>
+    <string name="are_you_sure_you_want_to_deliver_this_order">Are you sure you want to deliver this order?</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

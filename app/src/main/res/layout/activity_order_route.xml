@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ - activity_order_route.xml
+ - Created by Ulises Gonzalez
+ - Copyright (c) 2025. All rights reserved
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orderRouteMapRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activity.OrderRouteActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mapConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/mapFragmentLayout"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/margin.big"
+            app:layout_constraintBottom_toTopOf="@+id/deliverButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/nextLocationCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin.big"
+            android:padding="@dimen/margin.normal"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/margin.normal">
+
+                <TextView
+                    android:id="@+id/nextLocationTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin.small"
+                    android:text="@string/next_delivery"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nextLocationNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin.small"
+                    android:text="@string/location"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/deliverButton"
+            style="@style/primaryButton"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/margin.big"
+            android:text="@string/deliver_and_continue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.myorderroute.mobile.ui.widget.EmptyState
+        android:id="@+id/orderEmptyState"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:imageEmptyState="@drawable/logo"
+        app:subtitleEmptyState="@string/without_orders"
+        app:titleEmptyState="@string/you_don_t_have_orders"
+        tools:visibility="gone" />
+
+    <com.myorderroute.mobile.ui.widget.Loader
+        android:id="@+id/orderRouteProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:visibility="gone"
+        app:textLoader="@string/loading"
+        tools:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "668734392069",
+    "project_id": "my-order-route-7b584",
+    "storage_bucket": "my-order-route-7b584.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668734392069:android:01efcd8d0d825938c3596c",
+        "android_client_info": {
+          "package_name": "com.myorderroute.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWXj4rBW7ZfNmLmNCMZxPPrq2XJ8U7fnw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

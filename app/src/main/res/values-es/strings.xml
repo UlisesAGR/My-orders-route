@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ - strings.xml - spanish
+ - Created by Ulises Gonzalez on 18/02/25
+ - Copyright (c) 2025. All rights reserved
+-->
+<resources>
+
+    <!-- Order Route Screen -->
+    <string name="please_grant_permission">Por favor, conceda permiso para acceder a la galería.</string>
+    <string name="current_location">Ubicacion actual</string>
+    <string name="next_order">Sigueinte pedido</string>
+    <string name="next_delivery">Próxima entrega</string>
+    <string name="location">Ubicacion</string>
+
+    <!-- Empty State -->
+    <string name="image">Imagen</string>
+
+    <!-- Loader -->
+    <string name="loading">Cargando..</string>
+    <string name="without_orders">Sin pedidos</string>
+    <string name="you_don_t_have_orders">No tienes pedidos</string>
+    <string name="deliver_and_continue">Entregar y continuar</string>
+
+    <!-- Welcome Screen -->
+    <string name="continue_flow">Continuar</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="start_your_route_with_the_best_app">Empieza tu ruta con la mejor app</string>
+
+    <!-- Success Screen -->
+    <string name="success">Exitoso</string>
+    <string name="you_finished_your_deliveries">Terminaste tus entregas</string>
+
+    <!-- Delivery Dialog -->
+    <string name="message">Mensaje</string>
+    <string name="are_you_sure_you_want_to_deliver_this_order">¿Estás seguro de que quieres entregar este pedido?</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+
+</resources>

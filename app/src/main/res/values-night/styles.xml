@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ - styles.xml - night
+ - Created by Ulises Gonzalez
+ - Copyright (c) 2025. All rights reserved
+-->
+<resources>
+
+    <style name="background">
+        <item name="android:background">@color/md_theme_dark_background</item>
+    </style>
+
+</resources>

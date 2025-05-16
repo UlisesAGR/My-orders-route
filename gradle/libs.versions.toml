@@ -1,0 +1,149 @@
+# libs.versions.toml
+# Created by Ulises Gonzalez
+# Copyright (c) 2025. All rights reserved
+[versions]
+# libraries
+lib-coreKtx = "1.16.0"
+lib-lifecycle = "2.9.0"
+lib-activity = '1.10.1'
+activity = "1.10.1"
+lib-fragment = '1.8.6'
+lib-coroutines = "1.10.1"
+lib-runner = "1.6.2"
+lib-hilt = "2.56.1"
+lib-okhttp3 = '4.12.0'
+lib-retrofit = '2.11.0'
+lib_room = "2.7.1"
+lib-firebase-core = "21.1.1"
+lib-firebase = "33.13.0"
+lib-firebase-crashlytics = "19.4.3"
+lib-firebase-analytics = "22.4.0"
+google-services-location = "21.3.0"
+google-services-maps = "19.2.0"
+# ui
+lib-appcompat = "1.7.0"
+lib-constraintlayout = "2.2.1"
+lib-legacySupport = "1.0.0"
+lib-material = '1.12.0'
+lib-splashscreen = '1.0.1'
+lib-navigation = "2.9.0"
+lib-konfetti = "2.0.5"
+# test
+test-junit = '4.13.2'
+test-mockito = "5.16.1"
+test-mockito-inline = "5.2.0"
+test-robolectric = "4.14.1"
+test-hilt = "2.56.1"
+# androidTest
+androidTest-junit = '1.2.1'
+androidTest-espresso = '3.6.1'
+# plugins
+plugin-agp = "8.9.2"
+plugin-library = "8.2.2"
+plugin-kotlin = "2.0.21"
+plugin-hilt = '2.48'
+plugin-navigation = '2.9.0'
+plugin-googleServices = "4.4.2"
+plugin-googleCrashlytics = "3.0.3"
+plugin-ksp = '2.0.21-1.0.27'
+
+[libraries]
+# libraries
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "lib-coreKtx" }
+androidx-lifecycle-viewmodel = { module = 'androidx.lifecycle:lifecycle-viewmodel-ktx', version.ref = 'lib-lifecycle' }
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lib-lifecycle" }
+androidx-lifecycle-livedata = { module = 'androidx.lifecycle:lifecycle-livedata-ktx', version.ref = 'lib-lifecycle' }
+androidx-activity-ktx = { module = 'androidx.activity:activity-ktx', version.ref = 'lib-activity' }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-fragment = { module = 'androidx.fragment:fragment-ktx', version.ref = 'lib-fragment' }
+androidx-runner = { group = "androidx.test", name = "runner", version.ref = "lib-runner" }
+
+org-coroutines = { module = 'org.jetbrains.kotlinx:kotlinx-coroutines-android', version.ref = 'lib-coroutines' }
+com-hilt = { module = 'com.google.dagger:hilt-android', version.ref = "lib-hilt" }
+com-hilt-compiler = { module = 'com.google.dagger:hilt-compiler', version.ref = "lib-hilt" }
+
+com-okhttp3 = { module = 'com.squareup.okhttp3:logging-interceptor', version.ref = 'lib-okhttp3' }
+com-retrofit2-retrofit = { module = 'com.squareup.retrofit2:retrofit', version.ref = 'lib-retrofit' }
+com-retrofit2-converter-gson = { module = 'com.squareup.retrofit2:converter-gson', version.ref = 'lib-retrofit' }
+
+androidx-room = { module = "androidx.room:room-ktx", version.ref = "lib_room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "lib_room" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "lib_room" }
+# ui
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "lib-appcompat" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "lib-constraintlayout" }
+androidx-legacy-support = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "lib-legacySupport" }
+androidx-splashscreen = { module = 'androidx.core:core-splashscreen', version.ref = 'lib-splashscreen' }
+
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "lib-navigation" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "lib-navigation" }
+
+com-material3 = { module = 'com.google.android.material:material', version.ref = 'lib-material' }
+nl-konfetti = { module = "nl.dionsegijn:konfetti-xml", version.ref = "lib-konfetti" }
+
+com-firebase-core = { group = "com.google.firebase", name = "firebase-core", version.ref = "lib-firebase-core" }
+com-firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "lib-firebase" }
+com-firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx", version.ref = "lib-firebase-crashlytics" }
+com-firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx", version.ref = "lib-firebase-analytics" }
+com-google-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "google-services-maps" }
+com-google-location = { module = "com.google.android.gms:play-services-location", version.ref = "google-services-location" }
+
+# test
+test-junit = { module = 'junit:junit', version.ref = 'test-junit' }
+test-coroutines = { module = 'org.jetbrains.kotlinx:kotlinx-coroutines-test', version.ref = 'lib-coroutines' }
+test-hilt = { module = 'com.google.dagger:hilt-android-testing', version.ref = "test-hilt" }
+test-mockito-core = { module = 'org.mockito:mockito-core', version.ref = 'test-mockito' }
+test-mockito-inline = { module = 'org.mockito:mockito-inline', version.ref = "test-mockito-inline" }
+test-robolectric = { module = 'org.robolectric:robolectric', version.ref = "test-robolectric" }
+# androidTest
+androidTest-junit = { module = 'androidx.test.ext:junit', version.ref = 'androidTest-junit' }
+androidTest-room = { module = 'androidx.room:room-testing', version.ref = 'lib_room' }
+androidTest-espresso-core = { module = 'androidx.test.espresso:espresso-core', version.ref = 'androidTest-espresso' }
+androidTest-espresso-contrib = { module = 'androidx.test.espresso:espresso-contrib', version.ref = 'androidTest-espresso' }
+
+[bundles]
+androidx-lifecycle-libs = [
+    'androidx-lifecycle-viewmodel',
+    'androidx-lifecycle-runtime',
+    'androidx-lifecycle-livedata',
+]
+com-retrofit-libs = [
+    'com-retrofit2-retrofit',
+    'com-retrofit2-converter-gson',
+]
+androidx-room-libs = [
+    'androidx-room',
+    'androidx-room-runtime',
+]
+androidx-navigation-libs = [
+    "androidx-navigation-fragment-ktx",
+    "androidx-navigation-ui-ktx",
+]
+test-mockito-libs = [
+    'test-mockito-core',
+    'test-mockito-inline',
+]
+androidTest-espresso-libs = [
+    'androidTest-espresso-core',
+    'androidTest-espresso-contrib',
+]
+com-firebase-libs = [
+    'com-firebase-core',
+    'com-firebase-bom',
+    'com-firebase-crashlytics',
+    'com-firebase-analytics',
+]
+com-google-gms = [
+    'com-google-maps',
+    'com-google-location',
+]
+
+[plugins]
+com-application = { id = "com.android.application", version.ref = "plugin-agp" }
+com-library = { id = 'com.android.library', version.ref = 'plugin-library' }
+org-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "plugin-kotlin" }
+com-hilt = { id = 'com.google.dagger.hilt.android', version.ref = 'plugin-hilt' }
+androidx-navigation = { id = "androidx.navigation.safeargs.kotlin", version.ref = "plugin-navigation" }
+com-google-services = { id = "com.google.gms.google-services", version.ref = "plugin-googleServices" }
+com-google-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "plugin-googleCrashlytics" }
+com-ksp = { id = "com.google.devtools.ksp", version.ref = "plugin-ksp" }
