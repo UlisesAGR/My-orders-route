@@ -13,6 +13,18 @@ import retrofit2.Response
 
 object CoordinatesMock {
 
+    val coordinatesModel = CoordinatesModel(
+        name = "Location 1",
+        latitude = 19.432608,
+        longitude = -99.133209,
+    )
+
+    val coordinatesResponse = CoordinatesResponse(
+        name = "Location 1",
+        latitude = 19.432608,
+        longitude = -99.133209,
+    )
+
     val coordinatesModelList: List<CoordinatesModel> =
         listOf(
             CoordinatesModel(
