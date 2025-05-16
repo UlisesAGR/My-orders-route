@@ -42,7 +42,7 @@ class OrderRouteRepositoryTest {
     }
 
     @Test
-    fun `Verify Current User Test`(): Unit = runTest {
+    fun `Get Coordinates From Repository Test`(): Unit = runTest {
         val expected = coordinatesModelList
         // Given
         `when`(orderRouteSource.getCoordinates()).thenReturn(coordinatesModelListResource)
