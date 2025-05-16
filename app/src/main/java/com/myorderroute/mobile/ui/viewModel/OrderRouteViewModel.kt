@@ -5,13 +5,12 @@
  */
 package com.myorderroute.mobile.ui.viewModel
 
-import android.location.Location
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.myorderroute.mobile.domain.model.CoordinatesModel
-import com.myorderroute.mobile.domain.state.OrderStatus
 import com.myorderroute.mobile.domain.usecase.GetCoordinatesUseCase
 import com.myorderroute.mobile.util.location.GpsLocation
+import com.myorderroute.mobile.util.location.getNearestLocation
+import com.myorderroute.mobile.util.location.markNextLocationAsCompleted
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -75,32 +74,5 @@ class OrderRouteViewModel @Inject constructor(
                 )
             )
         }
-    }
-
-    private fun markNextLocationAsCompleted(
-        nextLocation: CoordinatesModel?,
-        pendingLocations: List<CoordinatesModel>
-    ): List<CoordinatesModel> =
-        pendingLocations.map { location ->
-            if (location == nextLocation) location.copy(status = OrderStatus.COMPLETED) else location
-        }
-
-    private fun getNearestLocation(
-        currentLocation: CoordinatesModel?,
-        pendingLocations: List<CoordinatesModel>,
-    ): CoordinatesModel? =
-        currentLocation?.let {
-            pendingLocations
-                .filter { it.status == OrderStatus.PENDING }
-                .minByOrNull { location -> calculateDistance(currentLocation, location) }
-        }
-
-    private fun calculateDistance(
-        from: CoordinatesModel,
-        to: CoordinatesModel,
-    ): Float {
-        val result = FloatArray(1)
-        Location.distanceBetween(from.latitude, from.longitude, to.latitude, to.longitude, result)
-        return result[0]
     }
 }
