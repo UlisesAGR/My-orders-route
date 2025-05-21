@@ -4,9 +4,8 @@ Conocimientos aplicados:
 
 • Fundamentales
 o Android Studio
-o Mockable.io
+o Api - themoviedb
 o Firebase
-o Maps
 o Github
 
 • Control de versiones 
@@ -17,6 +16,17 @@ o Kotlin
 
 • Guias de diseño 
 o Material design
+
+• Vistas
+o Frame
+o Linear
+o Constraint 
+o Coordinator
+o RecyclerView 
+o CustomView
+
+• Imágenes
+o Glide
 
 • Patrones de diseño 
 o Observer - Flow
@@ -31,6 +41,9 @@ o Clean Architecture
 o Retrofit 
 o OkHttp 
 
+• Almacenamiento
+o Room
+
 • Asíncrono 
 o Coroutines 
 o Suspend function 
@@ -38,6 +51,13 @@ o Dispatchers
 
 • Extended Functions
 • Scope Functions
+• C/I
+
+• Servicios
+o FireBase - Analytics - Crashlytics
+
+• Variantes de construcción 
+o Build types
 
 • Unit test
 o Mockito
